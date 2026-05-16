@@ -20,4 +20,4 @@ Then get the ip address of the VM by doing ip addr show which should show the ip
 After doing so on the host machine ssh into it by typing ssh jon@10.0.0.126 and type yes to connect and get in like so: 
 ![alt text](image-1.png)    
 Then type in the password to get in and should be ssh'd in. 
-Then its time to install Openmediavault inside of the ssh session start by typing in sudo apt isntall -y wget curl, then run: wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash. After entering, wait a while for it to finish
+Then its time to install Openmediavault inside of the ssh session start by typing in sudo apt isntall -y wget curl, then run: wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash. After entering, wait a while for it to finish. Or type it as wget -4 -0 instead to use IPv4 to get it to work better.
