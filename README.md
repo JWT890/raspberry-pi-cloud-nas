@@ -24,3 +24,4 @@ Then its time to install Openmediavault inside of the ssh session start by typin
 If it doesn't work, just uninstall the desktop environment by typing first: sudo apt remove --purge gnome* desktop-base -y. Then restart the VM or reboot it and then sign in after a few minutes.  
 Then after getting back in type: sudo apt remove --purge xorg* x11-common -y. Then type sudo apt remove autoremove -y then sudo apt autoclean, then sudo reboot. After rebooting the screen should look like Ubuntu Server: 
 ![alt text](image-2.png)    
+Then ssh on the host computer back into the VM and type curl curl -L https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install -o omv-install.sh. Then type sudo sudo bash omv-install.sh and it should start installing. Then go wait for around 20-30 minutes or so. 
