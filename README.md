@@ -20,4 +20,7 @@ Then get the ip address of the VM by doing ip addr show which should show the ip
 After doing so on the host machine ssh into it by typing ssh jon@10.0.0.126 and type yes to connect and get in like so: 
 ![alt text](image-1.png)    
 Then type in the password to get in and should be ssh'd in. 
-Then its time to install Openmediavault inside of the ssh session start by typing in sudo apt isntall -y wget curl, then run: wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash. After entering, wait a while for it to finish. Or type it as wget -4 -0 instead to use IPv4 to get it to work better.
+Then its time to install Openmediavault inside of the ssh session start by typing in sudo apt isntall -y wget curl, then run: wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash. After entering, wait a while for it to finish. Or type it as wget -4 -0 instead to use IPv4 to get it to work better. 
+If it doesn't work, just uninstall the desktop environment by typing first: sudo apt remove --purge gnome* desktop-base -y. Then restart the VM or reboot it and then sign in after a few minutes.  
+Then after getting back in type: sudo apt remove --purge xorg* x11-common -y. Then type sudo apt remove autoremove -y then sudo apt autoclean, then sudo reboot. After rebooting the screen should look like Ubuntu Server: 
+![alt text](image-2.png)    
